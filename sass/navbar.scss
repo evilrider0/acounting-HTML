@@ -1,0 +1,55 @@
+// Header
+// Manishankar Vakta
+
+.body_wrapper{
+    .container-fluid{
+        .row{
+            .main_nav{
+                background: $blue_mid;
+                min-height: 92vh;
+                .card{
+                    background: transparent;
+                    border:0;
+                    .card-header{
+                        padding: .5em;
+                        border:0;
+                        background: transparent;
+                        a{
+                            color:white;
+                            text-decoration: none;
+                            font-family: roboto;
+                            font-weight: 100;
+                            i.fa{
+                                padding-right: 10px;
+                                font-size: 1.7em;
+                            }
+                        }
+                        a:hover,a.active{
+                            color: $blue_light;
+                        }
+                        
+                    }
+                    .card-block{
+                        .nav-link{
+                            padding: 5px;
+                            a{
+                                color: $white_light;
+                                text-decoration: none;
+                                font-family: roboto;
+                                font-weight: 100;
+                                font-size: .9em;
+                                i.fa{
+                                    padding-right: 10px;
+                                    font-size: 1.3em;
+                                }
+                            }
+                            a:hover,a.active{
+                                color: $blue_light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

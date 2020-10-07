@@ -1,0 +1,37 @@
+// Header
+// Manishankar Vakta
+
+.header{
+    .container-fluid{
+        .row{
+            .logo{
+                background-color: $blue_dark;
+                padding: 15px;
+                img{
+                    height:30px;
+                }
+            }
+            .nav-top{
+                background: $blue_mid_lit;
+                .navbar{
+                    background: $blue_mid_lit;
+                    .navbar-brand{
+
+                    }
+                    .navbar-nav{
+                        .nav-item{
+                            img{
+                                height: 30px;
+                                border-radius: 25px;
+                                margin-top: 5px;    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
