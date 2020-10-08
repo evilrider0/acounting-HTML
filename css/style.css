@@ -7840,4 +7840,15 @@ a.text-dark:hover, a.text-dark:focus {
       .body_wrapper .container-fluid .row .main_nav .card .card-block .nav-link a:hover, .body_wrapper .container-sm .row .main_nav .card .card-block .nav-link a:hover, .body_wrapper .container-md .row .main_nav .card .card-block .nav-link a:hover, .body_wrapper .container-lg .row .main_nav .card .card-block .nav-link a:hover, .body_wrapper .container-xl .row .main_nav .card .card-block .nav-link a:hover, .body_wrapper .container-fluid .row .main_nav .card .card-block .nav-link a.active, .body_wrapper .container-sm .row .main_nav .card .card-block .nav-link a.active, .body_wrapper .container-md .row .main_nav .card .card-block .nav-link a.active, .body_wrapper .container-lg .row .main_nav .card .card-block .nav-link a.active, .body_wrapper .container-xl .row .main_nav .card .card-block .nav-link a.active {
         color: #ABD5FF; }
 
+.main_content .title {
+  font-size: 1.2em;
+  color: #0065CA;
+  margin-bottom: 0px !important;
+  margin-top: 10px !important; }
+  .main_content .title i.fa {
+    margin-right: 10px;
+    font-size: 1.5em; }
+.main_content hr {
+  margin: .5rem 0; }
+
 /*# sourceMappingURL=style.css.map */
