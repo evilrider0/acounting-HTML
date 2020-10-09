@@ -7854,4 +7854,12 @@ a.text-dark:hover, a.text-dark:focus {
 .dashboard {
   padding: 10px; }
 
+.products {
+  padding: 10px; }
+  .products .table tbody tr {
+    border-bottom: 1px solid #dddddd; }
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #93c9f2; }
+
 /*# sourceMappingURL=style.css.map */
