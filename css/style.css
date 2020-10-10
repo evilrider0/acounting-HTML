@@ -7856,10 +7856,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .products {
   padding: 10px; }
+  .products .table thead tr {
+    background: #0065CA; }
+    .products .table thead tr th {
+      color: #FFFFFF; }
   .products .table tbody tr {
-    border-bottom: 1px solid #dddddd; }
-
-.table tbody tr:nth-of-type(even) {
-  background-color: #93c9f2; }
+    border-bottom: 1px solid #F6F6F6; }
+  .products .table tbody tr:nth-of-type(even) {
+    background-color: #ABD5FF; }
 
 /*# sourceMappingURL=style.css.map */
