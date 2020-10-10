@@ -7849,9 +7849,30 @@ a.text-dark:hover, a.text-dark:focus {
     margin-right: 10px;
     font-size: 1.5em; }
 .main_content hr {
+  background: #61ADF8;
   margin: .5rem 0; }
 
 .dashboard {
   padding: 10px; }
+  .dashboard .card {
+    border: 1px solid #61ADF8;
+    border-radius: 10px; }
+    .dashboard .card .card-header {
+      background: #61ADF8;
+      color: #FFFFFF;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+    .dashboard .card .card-body ul {
+      margin: 0px;
+      padding: 0px; }
+      .dashboard .card .card-body ul li {
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+        .dashboard .card .card-body ul li a {
+          text-decoration: none;
+          color: #656768; }
+          .dashboard .card .card-body ul li a span.pull-right span {
+            color: #61ADF8; }
 
 /*# sourceMappingURL=style.css.map */

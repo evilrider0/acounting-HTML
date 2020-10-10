@@ -3,4 +3,39 @@
 
 .dashboard{
      padding: 10px;
+     .card{
+       border: 1px solid $blue_mid_lit;
+       border-radius: 10px;
+       .card-header{
+         background: $blue_mid_lit;
+         color: $white_dark;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+       }
+       .card-body{
+         ul{
+           margin: 0px;
+           padding: 0px;
+           li{
+             list-style: none;
+             padding-top: 5px;
+             padding-bottom: 5px;
+             a{
+               text-decoration: none;
+               color: $black_mid;
+               span.pull-right{
+                 span{
+                   color: $blue_mid_lit;
+                 }
+               }
+             }
+           }
+
+         }
+
+       }
+     }
+
+
+
 }
