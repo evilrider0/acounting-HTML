@@ -1,0 +1,25 @@
+// products page
+// Shubhajit Halder
+
+.products{
+	padding:10px;
+	.table{
+		thead{
+			tr{
+				background:$blue_mid;
+				th{
+					color: $white_dark;
+				}
+				
+			}
+		}
+		tbody{
+			tr{
+				border-bottom:1px solid $white_mid;
+			}
+			tr:nth-of-type(even){
+				background-color: $blue_light;
+			}
+		}
+	}
+}
