@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase-Accounting Applications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 logo">
+                    <img class=" mx-auto d-block" src="img/logo.png" alt="">                    
+                </div> <!--logo-->
+                <div class="col-md-10 nav-top">
+                    <nav class="navbar navbar-expand-lg navbar-dark ">
+                        <a class="navbar-brand" href="#">Accounts Operations</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                              <img src="img/user.jpg" alt="" class="user_photo">
+                            </li>
+                            <li class="nav-item dropdown active">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Manishankar Vakta
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">User Profile</a>
+                                <a class="dropdown-item" href="#">Notificarion</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                              </div>
+                            </li>
+                           
+                          </ul>
+                          
+                        </div>
+                      </nav>
+                </div> <!--nav-top-->
+            </div>
+        </div>
+    </div> <!--header-->
+    <div class="body_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 main_nav">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                          <!-- Dashboard -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a class="s_nav active" href="index.html" >
+                                  <i class="fa fa-dashboard "></i> Dashboard
+                                </a>
+                            </div>
+                          </div>
+
+                          <!-- Sales -->                          
+                          <div class="card">
+                            <div class="card-header " role="tab" id="headingTwo">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#sales" aria-expanded="true" aria-controls="sales">
+                                  <i class="fa fa-shopping-cart "></i> Sales
+                                </a>
+                            </div>
+                            <div id="sales" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-file-text"></i> Sales Invoice</a>
+                                  </li>                      
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-cart-arrow-down"></i> Sales Return</a>
+                                    </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Purchase -->                          
+                          <div class="card">
+                            <div class="card-header " role="tab" id="headingTwo">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#purchase" aria-expanded="true" aria-controls="purchase">
+                                  <i class="fa fa-shopping-basket "></i> Purchase
+                                </a>
+                            </div>
+                            <div id="purchase" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-cart-plus "></i> Purchase</a>
+                                  </li>                      
+                                  <li class="nav-link "><a href="#"><i class="fa fa-cart-arrow-down"></i> Purchase Return</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Dashboard -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a class="s_nav " href="#" >
+                                  <i class="fa fa-tachometer"></i> Collections
+                                </a>
+                            </div>
+                          </div>
+
+                          
+
+                          <!-- Payment -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a class="s_nav " href="#" >
+                                  <i class="fa fa-credit-card "></i> Payment
+                                </a>
+                            </div>
+                          </div>
+
+                           <!-- Products -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#pay" aria-expanded="true" aria-controls="pay">
+                                  <i class="fa fa-archive"></i> Product
+                                </a>
+                            </div>
+                            <div id="pay" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                    <a href="#"><i class="fa fa-gift"></i> Products</a>
+                                  </li>
+                                  
+                                  <li class="nav-link ">
+                                    <a href="#"><i class="fa fa-cube"></i> Product Group</a>
+                                </li>
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-cubes"></i> Product Category</a>
+                                  </li>
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-shield "></i> Product Brand</a>
+                                  </li>
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-tint "></i> Product Unit</a>
+                                  </li>
+                      
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+                      
+                          <!-- USER -->
+                          <div class="card">
+                            <div class="card-header " role="tab" id="headingThree">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#Users" aria-expanded="true" aria-controls="Users">
+                                  <i class="fa fa-users"></i> Users
+                                </a>
+                            </div>
+                            <div id="Users" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-user-secret"></i> Admin Users</a>
+                                  </li>                      
+                                  <li class="nav-link "><a href="#"><i class="fa fa-list-alt"></i> Customers</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      
+                      
+                        </div>
+                        
+                      
+                      
+                </div> <!--main_nav-->
+                <div class="col-md-10 main_content"> 
+                    <!--work area-->
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title"><i class="fa fa-products fa-2x"></i> Purchase</h2>
+                            <hr>
+                        </div>
+                    </div> <!--title row-->
+
+                    <div class="row Purchase">
+                    <!-- your code goes here  -->
+                      <div class="col-md-12">
+                        <!--Purchase table-->
+
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Purchase Order No </th>
+                                <th scope="col">Supplier Name</th>
+                                <th scope="col">Purchase Amound</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                             <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> MSJFPO12541</td>
+                                <td>MD Azad</td>
+                                <td>2510 BDT</td>
+                                <td>20/12/2020</td>
+                                <td><a href="#"><i class="far fa-eye"></i></a>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!--Purchase table-->
+                       </div>
+                       <!----------------------------------------------------------------------sales invoice page11-------------------------------------------->
+
+                       <div class="row sales invoice">
+                          <div class="col-md-12">
+                            <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Invoice No </th>
+                                  <th scope="col">Buyer </th>
+                                  <th scope="col">Total Amound</th>
+                                  <th scope="col">Discunt</th>
+                                  <th scope="col">Total Item</th>
+                                  <th scope="col">Date </th>
+                                  <th scope="col">Actions</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                               <td scope="row"> MSJFPO12541</td>
+                                  <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td scope="row"> MSJFPO12541</td>
+                                  <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td scope="row"> MSJFPO12541</td>
+                                 <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td scope="row"> MSJFPO12541</td>
+                                 <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td scope="row"> MSJFPO12541</td>
+                                  <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td scope="row"> MSJFPO12541</td>
+                                  <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                               <td scope="row"> MSJFPO12541</td>
+                                  <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td scope="row"> MSJFPO12541</td>
+                                  <td>MD Azad</td>
+                                  <td>2510 BDT</td>
+                                  <td> 0 </td>
+                                  <td> 3 BDT</td>
+                                  <td>20/12/2020</td>
+                                  <td><a href="#"><i class="far fa-eye"></i></a>
+                                  </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <!----------------------------------------------------------------------sales invoice-------------------------------------------->
+  
+                        </div>
+                         
+                       </div>
+                       <!---------------Accounting-Sales-Return------------>
+                       <div class="row Accounting-Sales-Return">
+                          <div class="col-md-12">
+                              <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Product Name </th>
+                                    <th scope="col">Quantity </th>
+                                    <th scope="col">Price </th>
+                                    <th scope="col">Discunt</th>
+                                    <th scope="col">Subtotal Item</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                 <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                     
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                 <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <!--table 2 Start-- >
+                          <div class="row">
+                            <div class="col-md-12">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Product Name </th>
+                                      <th scope="col">Quantity </th>
+                                      <th scope="col">Price </th>
+                                      <th scope="col">Unit type</th>
+                                      <th scope="col">Subtotal </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                   <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> Box  </td>
+                                      <td> 240 </td>
+                                       
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> kG  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> Packet  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> Pics  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> BOX  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> Pics  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                   <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> Pics  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> Pics  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                         <!--table 2 Finished-->
+                         <!--Accounting-Purchase-Return" Start page6-->
+                        <div class="row Accounting-Purchase-Return">
+                            <div class="col-md-12">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Product Name </th>
+                                      <th scope="col">Quantity </th>
+                                      <th scope="col">Price </th>
+                                      <th scope="col">Discunt</th>
+                                      <th scope="col">Subtotal </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                   <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                       
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                   <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                      <td>2   </td>
+                                      <td>120 </td>
+                                      <td> 5  </td>
+                                      <td> 240 </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!---tabile 2--->
+
+                            <div class="row">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Product Name </th>
+                                <th scope="col">Returnm Quantity </th>
+                                <th scope="col">Returnm Price </th>
+                                <th scope="col">Unit type</th>
+                                <th scope="col">Subtotal </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Box  </td>
+                                <td> 240 </td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> kG  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Packet  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> BOX  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                             <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div><!---table2--->
+                         </div>
+                       </div><!--Accounting-Purchase-Return finished-->
+                       <div class="row Accounting-Create-Purchase">
+                         <div class="col-md-12">
+                           <table class="table"><!--Accounting-Create-Purchase Start 5 pag-->
+                          <thead>
+                            <tr>
+                              <th scope="col">Photo </th>
+                              <th scope="col">Code </th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Add</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div><!----Accounting-Create-Purchase finished---->
+                       <!---table2 start--->
+                       <div class="row">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Product Name </th>
+                                <th scope="col">Returnm Quantity </th>
+                                <th scope="col">Returnm Price </th>
+                                <th scope="col">Unit type</th>
+                                <th scope="col">Subtotal </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Box  </td>
+                                <td> 240 </td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> kG  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Packet  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> BOX  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                             <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><i class="fas fa-times"></i> Apple Kashmir</td>
+                                <td>2   </td>
+                                <td>120 </td>
+                                <td> Pics  </td>
+                                <td> 240 </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div><!---table2 finished--->
+                       <!--page7 Accounting-Collections Start-->
+                       <div class="row Accounting-Collections">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Buyer</th>
+                                <th scope="col">Memo No</th>
+                                <th scope="col">Invoice No </th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Action </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                             <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
+                         <!--page7 Accounting-Collections fINISHED-->
+
+                         <!--table 2 Start-->
+                         <div class="row Accounting-Collections">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Bank</th>
+                                <th scope="col">Chaque No</th>
+                                <th scope="col">Checque No </th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Action </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace BankExace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace BankExace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                             
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
+                       <!--table 2 finished-->
+                       <!--page7 Accounting-Payment Start-->
+                       <div class="row Accounting-Payment">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Buyer</th>
+                                <th scope="col">Memo No</th>
+                                <th scope="col">Invoice No </th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Action </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                             <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Javad Ahamed</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
+                         <!--page8 Accounting-Payment fINISHED-->
+
+                         <!--table 2 Start-->
+                         <div class="row Accounting-Collections">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Bank</th>
+                                <th scope="col">Chaque No</th>
+                                <th scope="col">Checque No </th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Action </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace BankExace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace BankExace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Exace Bank</td>
+                                <td>M:SLD234</td>
+                                <td>MSKDHCS1235 </td>
+                                <td> 240  </td>
+                                <td><a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a><a href="#"><i class="fas fa-warning"></i></a></td>
+                            </tr>
+                             
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
+                       <!--table 2 finished-->
+
+                       <!--Page 12 Create New invoice-->
+                       <div class="row">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Photo </th>
+                              <th scope="col">Code </th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Cost</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Add</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">ADHC15  </td>
+                                <td> Appple Kashmir</td>
+                                <td>Apple</td>
+                                <td>150BDT</td>
+                                <td>50 Box</td>
+                                <td><a href="#"><i class="fa shopping-card"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 12 Create New invoice finished-->
+                       <!--Page 12 Table2 -->
+                       <div class="row">
+                         <div class="col-md-12">
+                           
+                         </div>
+                       </div>
+                       <!--Page 12 Table2 -->
+
+                       <div class="row invoice">
+                          <div class="col-md-12">
+                              <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Product Name </th>
+                                    <th scope="col">Quantity </th>
+                                    <th scope="col">Price </th>
+                                    <th scope="col">Discunt</th>
+                                    <th scope="col">Subtotal Item</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                 <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                     
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                 <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row"> Apple Kashmir</td>
+                                    <td>2   </td>
+                                    <td>120 </td>
+                                    <td> 5  </td>
+                                    <td> 240 </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <!--Page 12 Table2 Finished -->
+                        <!--Users Admin list page 17 Start-->
+                        <div class="row">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">S/L </th>
+                                <th scope="col">Name </th>
+                                <th scope="col">Phone </th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Actions </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                             <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">01</td>
+                                <td>Md Azad   </td>
+                                <td>01354632589 </td>
+                                <td> Active  </td>
+                                <td> <a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
+                       <!--Users Admin list page 17 Finished-->
+
+                       <!--Stup Bank Start page 24-->
+
+                       <div class="row">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Bank Name </th>
+                                <th scope="col">Adress </th>
+                                <th scope="col">Phone </th>
+                                 <th scope="col">Actions </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                             <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Brack Bank</td>
+                                <td>Uttra,Dhaka  </td>
+                                <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
+                       <!--Stup Bank Finished page 24-->
+
+                       <!--Stup Mobile Bank Startd page 25-->
+                       <div class="row">
+                         <div class="col-md-12">
+                           <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Bank Name </th>
+                                <th scope="col">Account Number </th>
+                                <th scope="col">Actions </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row">Bkash</td>
+                                 <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                                 
+                            </tr>
+                            <tr>
+                              <td scope="row">Nagat</td>
+                                 <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Rocket</td>
+                                 <td>01354632589 </td>
+                                <td> <a href="#"><i class="far fa-eye"></i></a><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a> </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"></td>
+                                <td>  </td>
+                                <td> </td>
+                                <td> 
+                            </tr>
+                            <tr>
+                              <td scope="row">  </td>
+                                <td>   </td>
+                                <td>  </td>
+                                <td>  </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> </td>
+                                <td>   </td>
+                                <td>  </td>
+                                <td>  </td>
+                            </tr>
+                            <tr>
+                             <td scope="row"> </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td>  </td>
+                            </tr>
+                            <tr>
+                              <td scope="row"> </td>
+                                <td>   </td>
+                                <td>  </td>
+                                <td>  </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
+                       <!--Stup Mobile Bank Startd page 25 finished -->
+
+                       <!--Page 30 Store Manager-Products-->
+                       <div class="row Store Manager-Products">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Photo </th>
+                              <th scope="col">Name </th>
+                                <th scope="col">Group</th>
+                                <th scope="col">Category</th>
+                                 <th scope="col">Stock</th>
+                                <th scope="col">Add</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row"><img src="img/user.jpg" alt="" height="40px"></td>
+                                <td class="text-primary">Kashmir Apple  </td>
+                                <td> No Frozen </td>
+                                <td>Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 30 Store Manager-Products finished-->
+
+                       <!--Page 32 Store Manager-ProductsGroup-->
+                       <div class="row Store Manager-ProductsGroup">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Name </th>
+                              <th scope="col">Details </th>
+                               <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 32 Store Manager-ProductsGroup finished-->
+
+                       <!--Page 33 Store Manager-ProductCategory -->
+                       <div class="row Store Manager-ProductCategory">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Name </th>
+                              <th scope="col">Details </th>
+                               <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 33 Store Manager-ProductCategory finished-->
+
+                       <!--Page 34 Store Manager-ProductBrand -->
+                       <div class="row Store Manager-ProductBrand">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Name </th>
+                              <th scope="col">Details </th>
+                               <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 34 Store Manager-ProductBrand Finished-->
+
+                       <!--Page 35 Store Manager-ProductUnits -->
+                       <div class="row Store Manager-ProductUnits">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Name </th>
+                              <th scope="col">Symbol </th>
+                               <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row" class="text-primary">Kilogram</td>
+                                <td> KG </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">PicesKG</td>
+                                <td> pcs </td>
+                                <td><a hpcsref="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Kilogram/td>
+                                <td> KG </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">PicesKG</td>
+                                <td> pcs </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Kilogram</td>
+                                <td> KG </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">PicesKG</td>
+                                <td> pcs </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Kilogram</td>
+                                <td> KG </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">PicesKG</td>
+                                <td> pcs </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 35 Store Manager-ProductUnits Finished-->
+
+                       <!--Page 36 Store Manager-Stock -->
+                       <div class="row Store Manager-Stock">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Name </th>
+                              <th scope="col">Stock </th>
+                               <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-tra25sh-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a hpcsref="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple/td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 36 Store Manager-Stock Finished-->
+
+                       <!--Page 37 Store Manager-Damage -->
+                       <div class="row Store Manager-Damage">
+                         <div class="col-md-12">
+                           <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Name </th>
+                              <th scope="col">Stock </th>
+                               <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-tra25sh-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a hpcsref="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple/td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td>25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Apple</td>
+                                <td> 25 </td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                         </div>
+                       </div>
+                       <!--Page 37 Store Manager-Damage Finished-->
+                    
+                    <!-- your code goes here  -->
+                    </div> <!--dashboard-->
+
+
+
+                </div><!--work area-->
+            </div>
+        </div>
+    </div> <!--body_wrapper-->
+
+        <p class="text-center">
+            <i class="fa fa-hourglass-2"></i>
+        </p>
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
