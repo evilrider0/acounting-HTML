@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Applications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 logo">
+                    <img class=" mx-auto d-block" src="img/logo.png" alt="">
+                </div> <!--logo-->
+                <div class="col-md-10 nav-top">
+                    <nav class="navbar navbar-expand-lg navbar-dark ">
+                        <a class="navbar-brand" href="#">Accounts Operations</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                              <img src="img/user.jpg" alt="" class="user_photo">
+                            </li>
+                            <li class="nav-item dropdown active">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Manishankar Vakta
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">User Profile</a>
+                                <a class="dropdown-item" href="#">Notificarion</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                              </div>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                      </nav>
+                </div> <!--nav-top-->
+            </div>
+        </div>
+    </div> <!--header-->
+    <div class="body_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 main_nav">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                          <!-- Dashboard -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a class="s_nav active" href="index.html" >
+                                  <i class="fa fa-dashboard "></i> Dashboard
+                                </a>
+                            </div>
+                          </div>
+
+                          <!-- Sales -->
+                          <div class="card">
+                            <div class="card-header " role="tab" id="headingTwo">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#sales" aria-expanded="true" aria-controls="sales">
+                                  <i class="fa fa-shopping-cart "></i> Sales
+                                </a>
+                            </div>
+                            <div id="sales" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-file-text"></i> Sales Invoice</a>
+                                  </li>
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-cart-arrow-down"></i> Sales Return</a>
+                                    </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Purchase -->
+                          <div class="card">
+                            <div class="card-header " role="tab" id="headingTwo">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#purchase" aria-expanded="true" aria-controls="purchase">
+                                  <i class="fa fa-shopping-basket "></i> Purchase
+                                </a>
+                            </div>
+                            <div id="purchase" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-cart-plus "></i> Purchase</a>
+                                  </li>
+                                  <li class="nav-link "><a href="#"><i class="fa fa-cart-arrow-down"></i> Purchase Return</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Dashboard -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a class="s_nav " href="#" >
+                                  <i class="fa fa-tachometer"></i> Collections
+                                </a>
+                            </div>
+                          </div>
+
+
+
+                          <!-- Payment -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a class="s_nav " href="#" >
+                                  <i class="fa fa-credit-card "></i> Payment
+                                </a>
+                            </div>
+                          </div>
+
+                           <!-- Products -->
+                          <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#pay" aria-expanded="true" aria-controls="pay">
+                                  <i class="fa fa-archive"></i> Product
+                                </a>
+                            </div>
+                            <div id="pay" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                    <a href="#"><i class="fa fa-gift"></i> Products</a>
+                                  </li>
+
+                                  <li class="nav-link ">
+                                    <a href="#"><i class="fa fa-cube"></i> Product Group</a>
+                                </li>
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-cubes"></i> Product Category</a>
+                                  </li>
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-shield "></i> Product Brand</a>
+                                  </li>
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-tint "></i> Product Unit</a>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <!-- USER -->
+                          <div class="card">
+                            <div class="card-header " role="tab" id="headingThree">
+                                <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#Users" aria-expanded="true" aria-controls="Users">
+                                  <i class="fa fa-users"></i> Users
+                                </a>
+                            </div>
+                            <div id="Users" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="card-block">
+                                <ul class="dw-nav">
+                                  <li class="nav-link ">
+                                      <a href="#"><i class="fa fa-user-secret"></i> Admin Users</a>
+                                  </li>
+                                  <li class="nav-link "><a href="#"><i class="fa fa-list-alt"></i> Customers</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+
+
+
+                </div> <!--main_nav-->
+                <div class="col-md-10 main_content">
+                    <!--work area-->
+
+                    <div class="row">
+                        <div class="col-12">
+                          <h2 class="title"><i class="fa fa-dashboard fa-2x"></i> Products Group</h2>
+                            <hr>
+                        </div>
+                    </div> <!--title row-->
+
+                    <div class="row ProductsGroup">
+                    <!-- your code goes here  -->
+                      <div class="col-md-6">
+                        <form action="">
+                          <div class="form-group row">
+                              <label for="salesreturn" class="col-sm-3 col-form-label"> Product Group Name</label>
+                              <div class="col-sm-9">
+                                <input type="taxt"  class="form-control" id="">
+                              </div>
+                            </div>
+                            <!-- Product Group Name End-->
+                           <div class="form-group row">
+                             <label for="salesreturn" class="col-sm-3 col-form-label"> Product Group Details </label>
+                             <div class="col-sm-9">
+                               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                             </div>
+                           </div>
+                            <!--Product Group Details End-->
+                           <div class="">
+                             <button type="button" class="btn btn-primary  pull-right"><i class="fa fa-cube" aria-hidden="true"></i> Create New Group </button>
+                           </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <table class="table">
+                             <thead>
+                            <tr>
+                              <th scope="col">Name </th>
+                              <th scope="col">Details </th>
+                               <th scope="col">Actions</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash "></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash "></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash "></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="text-primary">Non Frozen</td>
+                                <td> No Frozen Apple 25 </td>
+                                <td><a href="#"><i class="fa fa-edit"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                          </tbody>
+                           </table>
+                      </div>
+
+                         
+
+                    <!-- your code goes here  -->
+                    </div> <!--dashboard-->
+
+
+
+                </div><!--work area-->
+            </div>
+        </div>
+    </div> <!--body_wrapper-->
+
+        <p class="text-center">
+            <i class="fa fa-hourglass-2"></i>
+        </p>
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
