@@ -1,0 +1,29 @@
+// TAble Style
+
+table{
+    thead{
+        tr{
+            th{
+                background: $blue_mid_lit; 
+                color: $white_dark;
+                font-weight: 400;
+                font-size: .9em;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                font-size: .8em;
+                font-weight: 300;
+                padding: 0.50rem;
+            }
+        }
+        tr:nth-of-type(odd){
+            background: $white_dark;
+        }
+        tr:nth-of-type(even){
+            background: $blue_light;
+        }
+    }
+}

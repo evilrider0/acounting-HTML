@@ -1,0 +1,36 @@
+// FormStyle
+
+form{
+    
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+      
+        > .col,
+        > [class*="col-"] {
+          padding-right: 3px;
+          padding-left: 3px;
+        }
+      }
+    .form-group{
+        label{
+            font-size: .8em;
+            color: $blue_mid;
+        }
+        .form-control{
+            font-size: .8em;
+            color: $blue_mid_lit !important;
+            border: 1px solid $blue_mid_lit;
+            border-radius: 0px;
+            
+        }
+        .form-control::placeholder{
+            color: $blue_mid_lit;
+
+        }
+        .btn{
+            font-size: .8em;
+
+        }
+    }
+}
